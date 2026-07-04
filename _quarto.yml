@@ -1,6 +1,6 @@
 project:
   type: website
-
+  output-dir: docs
 website:
   title: "Chloe Pei-Hsin Huang's Research Blog"
   navbar:
