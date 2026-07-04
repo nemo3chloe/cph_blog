@@ -7,22 +7,15 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Research"
+      - text: "Blog"
+      - text: "Learning"
         menu:
-          - text: "Research interests"
-            href: research.qmd
-          - text: "Publications"
-            href: publications.qmd
-      - text: "Projects"
-        menu:
-          - text: "Cross-cultural"
-            href: projects/cultural.qmd
           - text: "Data visualisation"
             href: projects/visualisation.qmd
-          - text: "Learning R"
+          - text: "R"
             href: projects/R.qmd
-      - text: "Blog"
-        href: blog.qmd
+          - text: "Theory"
+            href: projects/theory.qmd
 
 format:
   html:
