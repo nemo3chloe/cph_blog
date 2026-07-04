@@ -1,0 +1,27 @@
+---
+title: "Chloe Pei-Hsin Huang's Research Blog"
+---
+
+I am a 1st year PhD student in Psychology at Durham University. My research focuses on relationships, masking and wellbeing in autistic adults.
+
+## This website
+
+This site is a space where I:
+
+1.  document my learning in R and Bayesian statistics
+
+2.  publish academic blogs
+
+## CV
+
+(file to be added)
+
+## Contact
+
+**Email: [pei-hsin.huang\@durham.ac.uk](mailto:pei-hsin.huang@durham.ac.uk){.email}**
+
+**ORCID: <https://orcid.org/0000-0001-5114-0052>**
+
+**Staff Profile: <https://www.durham.ac.uk/staff/pei-hsin-huang/>**
+
+This is a Quarto website. To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
