@@ -7,15 +7,14 @@ website:
     left:
       - text: "Home"
         href: index.qmd
-      - text: "Blog"
+      - text: "BiB (Bite-size Blogs)"
+        href: Bib.qmd
       - text: "Learning"
         menu:
           - text: "Data visualisation"
-            href: projects/visualisation.qmd
-          - text: "R"
-            href: projects/R.qmd
-          - text: "Theory"
-            href: projects/theory.qmd
+            href: visualisation.qmd
+          - text: "Reading"
+            href: theory.qmd
 
 format:
   html:

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Chloe Pei-Hsin Huang’s Research Blog</title>
+<title>BiB (Bite-size Blogs) – Chloe Pei-Hsin Huang’s Research Blog</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -33,6 +33,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -70,7 +72,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -78,7 +138,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -93,11 +153,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./Bib.html"> 
+    <a class="nav-link active" href="./Bib.html" aria-current="page"> 
 <span class="menu-text">BiB (Bite-size Blogs)</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -106,11 +166,11 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-learning">    
         <li>
-    <a class="dropdown-item" href="./visualisation.qmd">
+    <a class="dropdown-item" href="./visualisation.html">
  <span class="dropdown-text">Data visualisation</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./theory.qmd">
+    <a class="dropdown-item" href="./theory.html">
  <span class="dropdown-text">Reading</span></a>
   </li>  
     </ul>
@@ -123,69 +183,84 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default toc-left page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">BiB (Bite-size Blogs)</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page-left">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#this-website" id="toc-this-website" class="nav-link active" data-scroll-target="#this-website">This website</a></li>
-  <li><a href="#cv" id="toc-cv" class="nav-link" data-scroll-target="#cv">CV</a></li>
-  <li><a href="#contact" id="toc-contact" class="nav-link" data-scroll-target="#contact">Contact</a></li>
-  </ul>
-</nav>
-</nav>
+  
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-    </div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Chloe Pei-Hsin Huang’s Research Blog</h1>
-</div>
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
+
+<p>Welcome to BiB! I summarise accessible information/theory/framework here, primarily with my co-researchers (i.e., Emma Whittaker, Iris Varela, Kieran Rose and Rose Matthews), but also targeting to a wider audience outside the academia.</p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="listing-actions-group">
+   <div class="input-group input-group-sm quarto-listing-sort">
+    <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
+    <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
+      <option value="" disabled="" selected="" hidden="">Order By</option>
+      <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
+      <option value="listing-author" data-direction="asc">
+        Author
+      </option>
+    </select>
   </div>
-  
+    <div class="input-group input-group-sm quarto-listing-filter">
+      <span class="input-group-text"><i class="bi bi-search"></i></span>
+      <input type="text" class="search form-control" placeholder="Filter">
+    </div>
+</div>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1784033553204" data-listing-reading-time-sort="1" data-listing-word-count-sort="165">
+<div class="thumbnail"><a href="./posts/posts_RiverOfLife/index.html" class="no-external">
 
+<p class="card-img-top"><img loading='lazy' src="posts/posts_RiverOfLife/River of Life.png"  class="thumbnail-image card-img"/></p>
 
-</header>
-
-
-<p>I am a 1st year PhD student in Psychology at Durham University. My research focuses on relationships, masking and wellbeing in autistic adults.</p>
-<section id="this-website" class="level2">
-<h2 class="anchored" data-anchor-id="this-website">This website</h2>
-<p>This site is a space where I:</p>
-<ol type="1">
-<li><p>document my learning</p></li>
-<li><p>publish bite-size blog for co-researchers (and with the wider audience)</p></li>
-</ol>
-</section>
-<section id="cv" class="level2">
-<h2 class="anchored" data-anchor-id="cv">CV</h2>
-<p>(file to be added)</p>
-</section>
-<section id="contact" class="level2">
-<h2 class="anchored" data-anchor-id="contact">Contact</h2>
-<p><strong>Email: <a href="mailto:pei-hsin.huang@durham.ac.uk" class="email">pei-hsin.huang@durham.ac.uk</a></strong></p>
-<p><strong>ORCID: <a href="https://orcid.org/0000-0001-5114-0052" class="uri">https://orcid.org/0000-0001-5114-0052</a></strong></p>
-<p><strong>Staff Profile: <a href="https://www.durham.ac.uk/staff/pei-hsin-huang/" class="uri">https://www.durham.ac.uk/staff/pei-hsin-huang/</a></strong></p>
-<p>This is a Quarto website. To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-
-
-</section>
-
-</main> <!-- /main -->
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/posts_RiverOfLife/index.html" class="no-external">River of Life</a>
+</h3>
+<div class="delink listing-description"><a href="./posts/posts_RiverOfLife/index.html" class="no-external">
+River of Life is a tool that visualises individual’s experience with a ‘river’ metaphor. Participants are encouraged to draw a river with these key elements – river of life…
+</a></div>
+</div>
+<div class="metadata">
+<a href="./posts/posts_RiverOfLife/index.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

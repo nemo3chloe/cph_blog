@@ -1,0 +1,14 @@
+---
+title: "BiB (Bite-size Blogs)"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: true
+  filter-ui: true
+page-layout: full
+title-block-banner: true
+---
+
+Welcome to BiB! I summarise accessible information/theory/framework here, primarily with my co-researchers (i.e., Emma Whittaker, Iris Varela, Kieran Rose and Rose Matthews), but also targeting to a wider audience outside the academia.

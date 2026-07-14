@@ -8,9 +8,9 @@ I am a 1st year PhD student in Psychology at Durham University. My research focu
 
 This site is a space where I:
 
-1.  document my learning in R and Bayesian statistics
+1.  document my learning
 
-2.  publish academic blogs
+2.  publish bite-size blog for co-researchers (and with the wider audience)
 
 ## CV
 
