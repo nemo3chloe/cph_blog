@@ -1,0 +1,17 @@
+/* 1. Define your main layout typography */
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* 2. Style the main page title (h1) with Palatinate Purple */
+h1 {
+  color: #7E245C !important; /* Official Palatinate Purple Hex Code */
+  text-align: center;
+  transition: color 0.3s ease; /* Makes the hover color change smooth instead of snappy */
+}
+
+/* 3. Make the title react when your mouse hovers over it */
+h1:hover {
+  color: #d9534f !important; /* Changes to this coral/red shade on hover */
+  text-decoration: underline;
+}
