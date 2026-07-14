@@ -1,14 +1,12 @@
 ---
 title: "BiB (Bite-size Blogs)"
 listing:
-  contents: posts
   sort: "date desc"
-  type: default
-  categories: true
-  sort-ui: true
-  filter-ui: true
-page-layout: full
-title-block-banner: true
+  contents: posts # or whatever your folder name is
+  type: grid      # Options: default, grid, or table
+  categories: false # Set to false to hide the right-side "Categories" bar
+  filter-ui: false  # Set to false to hide the search/filter box
+  sort-ui: true    # Set to false to hide the "Order By" dropdown
 ---
 
 Welcome to BiB! I summarise accessible information/theory/framework here, primarily with my co-researchers (i.e., Emma Whittaker, Iris Varela, Kieran Rose and Rose Matthews), but also targeting to a wider audience outside the academia.

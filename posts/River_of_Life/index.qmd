@@ -1,9 +1,8 @@
 ---
 title: "River of Life"
+date: "2026-07-14"
+date-format: "MMMM D, YYYY"
 ---
-
-## 14/07/26
-
 ## What is River of Life?
 
 River of Life is a tool that visualises individual’s experience with a ‘river’ metaphor. Participants are encouraged to draw a river with these key elements – river of life (key stages), tributaries (positive experiences), and rough waters (difficult challenges). After drawing the river, participants will be asked to share their own river with others.
@@ -17,7 +16,8 @@ River of Life is a tool that visualises individual’s experience with a ‘rive
 
 ## Steps
 
-![](River%20of%20Life.png)
+![](RoL.png)
+Figure made based on Moussa (2009), Howard (2023) and Carmody (2023)
 
 ## Useful Prompts
 
